@@ -7,6 +7,7 @@ public class ProductDB {
 
         Book myBook = null;
         Software mySoftware = null;
+        Music myMusic = null;
         Product myProduct = null;
 
         if (productCode.equalsIgnoreCase("java")) {
@@ -54,6 +55,19 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             myProduct = mySoftware;
             }
+
+        if (productCode.equalsIgnoreCase("spotify")) {
+            myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Thank you for the music");
+            myMusic.setPrice(7.50);
+            myMusic.setArtist("Abba");
+            myMusic.setLabel("The album");
+            myProduct = myMusic;
+        }
+        //add more music
+
+
 
         return myProduct;
 
