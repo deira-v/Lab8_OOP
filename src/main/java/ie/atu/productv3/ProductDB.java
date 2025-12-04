@@ -10,6 +10,7 @@ public class ProductDB {
         Music myMusic = null;
         Product myProduct = null;
 
+        //Book products by code
         if (productCode.equalsIgnoreCase("java")) {
             myBook = new Book();
             myBook.setCode(productCode);
@@ -33,6 +34,7 @@ public class ProductDB {
             myProduct = myBook;
         }
 
+        //Software products by code
         if (productCode.equalsIgnoreCase("studios")) {
             mySoftware = new Software();
             mySoftware.setCode(productCode);
@@ -40,34 +42,52 @@ public class ProductDB {
             mySoftware.setPrice(57.50);
             mySoftware.setVersion("Microsoft 1.1");
             myProduct = mySoftware;
-            } else if (productCode.equalsIgnoreCase("eclipse")) {
+        }
+        else if (productCode.equalsIgnoreCase("eclipse")) {
             mySoftware = new Software();
             mySoftware.setCode(productCode);
             mySoftware.setDescription("Build Java apps");
             mySoftware.setPrice(57.50);
             mySoftware.setVersion("Eclipse Neon");
             myProduct = mySoftware;
-            } else if (productCode.equalsIgnoreCase("oracle")) {
+        }
+        else if (productCode.equalsIgnoreCase("oracle")) {
             mySoftware = new Software();
             mySoftware.setCode(productCode);
             mySoftware.setDescription("Latest MySQL");
             mySoftware.setPrice(54.50);
             mySoftware.setVersion("Oracle 3.0");
             myProduct = mySoftware;
-            }
+        }
 
+        //Music products by code
         if (productCode.equalsIgnoreCase("spotify")) {
             myMusic = new Music();
             myMusic.setCode(productCode);
-            myMusic.setDescription("Thank you for the music");
+            myMusic.setDescription("The album");
             myMusic.setPrice(7.50);
             myMusic.setArtist("Abba");
-            myMusic.setLabel("The album");
+            myMusic.setLabel("Thank you for the music");
             myProduct = myMusic;
         }
-        //add more music
-
-
+        else if (productCode.equalsIgnoreCase("youtube")) {
+            myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Nimrod");
+            myMusic.setPrice(8.50);
+            myMusic.setArtist("Green Day");
+            myMusic.setLabel("Good riddance");
+            myProduct = myMusic;
+        }
+        if (productCode.equalsIgnoreCase("tidal")) {
+            myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Kepler");
+            myMusic.setPrice(6.50);
+            myMusic.setArtist("Gemitaiz");
+            myMusic.setLabel("Blue sky");
+            myProduct = myMusic;
+        }
 
         return myProduct;
 
