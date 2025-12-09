@@ -97,7 +97,7 @@ public class ProductDB {
             myTV.setPrice(400);
             myTV.setScreenSize(23);
             myTV.setManufacture("Samsung");
-
+            myProduct = myTV;
         }
         else if(productCode.equalsIgnoreCase("LG")){
             myTV = new TV();
@@ -106,7 +106,7 @@ public class ProductDB {
             myTV.setPrice(350);
             myTV.setScreenSize(20);
             myTV.setManufacture("LG");
-
+            myProduct = myTV;
         }
         else if(productCode.equalsIgnoreCase("Sony")){
             myTV = new TV();
@@ -115,7 +115,7 @@ public class ProductDB {
             myTV.setPrice(300);
             myTV.setScreenSize(25);
             myTV.setManufacture("Sony");
-
+            myProduct = myTV;
         }
 
         return myProduct;
