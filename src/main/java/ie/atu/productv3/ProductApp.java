@@ -18,9 +18,7 @@ public class ProductApp {
 
             Product p = ProductDB.getProduct(productCode);
 
-
             // display the output
-
             System.out.println();
             if (p != null) {
                 System.out.println("Description: " + p.toString());
