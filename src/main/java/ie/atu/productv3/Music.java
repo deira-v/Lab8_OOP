@@ -9,6 +9,7 @@ public class Music extends Product {
         super();
         artist = "";
         label = "";
+        count++;
     }
 
     public void setArtist(String artist) {
@@ -28,6 +29,6 @@ public class Music extends Product {
     @Override
     public String toString() {
         return super.toString() + " by " + artist +
-                ", label='" + label + "'";
+                " '" + label + "'";
     }
 }

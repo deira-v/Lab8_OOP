@@ -9,6 +9,7 @@ public class TV extends Product{
         super();
         ScreenSize = 0;
         Manufacture = "";
+        count++;
     }
 
     public double getScreenSize() {
@@ -29,8 +30,8 @@ public class TV extends Product{
 
     @Override
     public String toString() {
-        return super.toString() +
-                "ScreenSize='" + ScreenSize + "inches'" +
-                ", Manufacture='" + Manufacture + "'";
+        return super.toString() + " " +
+                ScreenSize + " Inches' " +
+                Manufacture;
     }
 }
