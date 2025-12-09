@@ -9,6 +9,7 @@ public class ProductDB {
         Software mySoftware = null;
         Music myMusic = null;
         Product myProduct = null;
+        TV myTV = null;
 
         //Book products by code
         if (productCode.equalsIgnoreCase("java")) {
@@ -79,7 +80,7 @@ public class ProductDB {
             myMusic.setLabel("Good riddance");
             myProduct = myMusic;
         }
-        if (productCode.equalsIgnoreCase("tidal")) {
+        else if(productCode.equalsIgnoreCase("tidal")) {
             myMusic = new Music();
             myMusic.setCode(productCode);
             myMusic.setDescription("Kepler");
@@ -87,6 +88,34 @@ public class ProductDB {
             myMusic.setArtist("Gemitaiz");
             myMusic.setLabel("Blue sky");
             myProduct = myMusic;
+        }
+
+        if(productCode.equalsIgnoreCase("Samsung")){
+            myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("Tv");
+            myTV.setPrice(400);
+            myTV.setScreenSize(23);
+            myTV.setManufacture("Samsung");
+
+        }
+        else if(productCode.equalsIgnoreCase("LG")){
+            myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("Television");
+            myTV.setPrice(350);
+            myTV.setScreenSize(20);
+            myTV.setManufacture("LG");
+
+        }
+        else if(productCode.equalsIgnoreCase("Sony")){
+            myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("Tv");
+            myTV.setPrice(300);
+            myTV.setScreenSize(25);
+            myTV.setManufacture("Sony");
+
         }
 
         return myProduct;
