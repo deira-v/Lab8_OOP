@@ -5,6 +5,7 @@ public class TV extends Product{
     private double ScreenSize;
     private String Manufacture;
 
+    //Defaullt Constructor
     public TV() {
         super();
         ScreenSize = 0;
@@ -12,6 +13,7 @@ public class TV extends Product{
         count++;
     }
 
+    //Setters and Getters
     public double getScreenSize() {
         return ScreenSize;
     }
@@ -28,6 +30,7 @@ public class TV extends Product{
         this.Manufacture = manufacture;
     }
 
+    // toSting with super
     @Override
     public String toString() {
         return super.toString() + " " +

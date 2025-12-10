@@ -90,6 +90,7 @@ public class ProductDB {
             myProduct = myMusic;
         }
 
+        //TV products by code
         if(productCode.equalsIgnoreCase("Samsung")){
             myTV = new TV();
             myTV.setCode(productCode);

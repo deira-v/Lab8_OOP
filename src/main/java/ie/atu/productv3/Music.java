@@ -5,6 +5,7 @@ public class Music extends Product {
     private String artist;
     private String label;
 
+    //Constructor
     public Music() {
         super();
         artist = "";
@@ -12,6 +13,7 @@ public class Music extends Product {
         count++;
     }
 
+    //Setters and Getters
     public void setArtist(String artist) {
         this.artist = artist;
     }
@@ -26,6 +28,7 @@ public class Music extends Product {
         return label;
     }
 
+    //toString Calling super
     @Override
     public String toString() {
         return super.toString() + " by " + artist +
